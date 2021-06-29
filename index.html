@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
         <title>Netflix Originals: The Devil Next Door</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" 
     rel="stylesheet">
@@ -17,18 +17,38 @@
         width:100%
     }
 }
-    /* Smartphone View */
+    
+
     @media all and (max-width: 767px){
-    .main-wrapper{
+ /* @media all and (min-width: 400px) and (max-width: 767px){ */
+      .main-wrapper{
         width:100%;
-    }
-    .main-container{
+      }
+      .main-container{
         width:100%
-    }            
-    .disclaimer{
+      }           
+
+    /* .disclaimer{
         display: none;
-    }
-}     
+    }             */
+
+      /* .disclaimer{
+        display:block;
+      }           */
+
+     /* .disclaimer{
+    display: inline-block;
+    }             */
+
+    /* .disclaimer{
+        display: contents;
+    }             */          
+
+    .disclaimer{
+        display: table;
+    }            
+
+ }
 </style>
 </head>
 
@@ -39,13 +59,27 @@
 cellspacing="0" cellpadding="0" style="background-color:#eeeeee;">
 <!-- begin row for "header-section" -->
 <tr>
-    <td>
-        <!-- begin section for a README, a disclaimer, and a "technologies used" row -->
-        <table class="disclaimer" align="center" border="0" 
-        cellspacing="0" cellpadding="0" width="600" style="text-align:left; 
-        border:10px solid #00ff00; border-style: inset; border-radius: 20px; 
-        background-color: white; max-width: 635px; padding: 15px 15px 15px 10px;">
-  
+  <td>
+
+
+    <!-- begin the main html email wrapper @ 600px width -->
+    <tr>
+      <td>
+        <table class="main-email-container" align="center" width="600" cellspacing="0" 
+            cellpadding="0" border="0" style="background:#ffffff;">                        
+
+      
+        <!-- begin row for "header-section" -->
+        <tr>
+            <td>
+                <!-- begin section for a README, a disclaimer, and a "technologies used" row -->
+                <table class="disclaimer" width="100%" align="center" border="0" 
+                cellspacing="0" cellpadding="0" style="text-align:left; border:10px solid #00ff00; border-style: inset; border-radius: 20px; 
+                background-color: white; max-width: 635px; padding: 15px 15px 15px 15px;">
+                
+
+
+                
             <tr>
               <td style="width:100%; text-align:left; font-family:Arial, 
               Helvetica, sans-serif; font-size:16px; font-weight: 500; 
@@ -98,44 +132,9 @@ cellspacing="0" cellpadding="0" style="background-color:#eeeeee;">
               </td>
             </tr>
         </table>
-        <!-- end header-section for a README, a disclaimer, and a "technologies used" row -->
-  
-            <!-- begin header-section for "email metadata" row -->
-            <!-- <tr>
-              <td> -->
-                <!-- header:tabindex="0", and, aria-landmark=role:banner -->
-                <!-- <table tabindex="0" role="complementary" align="center" cellspacing="0" 
-                cellpadding="0" border="0" width="600" style="background-color:#ffffff; 
-                font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#393939;
-                padding: 20px;">
-                    <tr style="text-align:left; 
-                    background-color:#ffffff;">
-                        <td>
-                            <p>Sent from Outlook</p>
-                            <hr/>  
-                            <p>From: Udemy</p>
-                            <p>Sent: February 22, 2019 4:32AM</p>
-                            <p>To: jerome-wilson-developer@hotmail.com</p>
-                            <p>Subject: Welcome to Udemy!</p>
-                        </td>
-                    </tr>        
-                </table>
-              </td>
-            </tr> -->
-            <!-- end header-section for "email metadata" row -->
-    <!-- </td>
-  </tr> -->
-  <!-- end header section for a README, a disclaimer, and a "technologies used" -->
-
-
 
 <!--begin row for the email metadata-->
-<tr>
-    <td>
-        <table class="container-wrapper" width="600" align="center" 
-        border="0" cellspacing="0" cellpadding="0" 
-        style="background-color:#000000; 
-        padding:20px 20px; font-family:Arial, Helvetica, sans-serif;">
+
 
 
 <!--begin row for the email metadata-->
